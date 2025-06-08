@@ -3,29 +3,29 @@ const Skills = () => {
     {
       title: "Frontend Development",
       skills: [
-        { name: "React", level: 85, icon: "⚛️" },
-        { name: "JavaScript", level: 90, icon: "🟨" },
-        { name: "HTML5", level: 95, icon: "🌐" },
-        { name: "CSS3", level: 88, icon: "🎨" },
-        { name: "Tailwind CSS", level: 80, icon: "💨" },
+        { name: "React", level: 75, icon: "⚛️" },
+        { name: "JavaScript", level: 75, icon: "🟨" },
+        { name: "HTML5", level: 90, icon: "🌐" },
+        { name: "CSS3", level: 80, icon: "🎨" },
+        { name: "Tailwind CSS", level: 70, icon: "💨" },
       ],
     },
     {
       title: "Backend Development",
       skills: [
-        { name: "Node.js", level: 82, icon: "🟢" },
-        { name: "Express.js", level: 80, icon: "⚡" },
+        { name: "Node.js", level: 75, icon: "🟢" },
+        { name: "Express.js", level: 75, icon: "⚡" },
         { name: "MongoDB", level: 75, icon: "🍃" },
-        { name: "REST APIs", level: 85, icon: "🔗" },
+        { name: "REST APIs", level: 70, icon: "🔗" },
       ],
     },
     {
       title: "Tools & Technologies",
       skills: [
-        { name: "Git", level: 88, icon: "📚" },
-        { name: "VS Code", level: 92, icon: "💻" },
-        { name: "Postman", level: 85, icon: "📮" },
-        { name: "npm/yarn", level: 80, icon: "📦" },
+        { name: "Git", level: 80, icon: "📚" },
+        { name: "VS Code", level: 85, icon: "💻" },
+        { name: "Postman", level: 60, icon: "📮" },
+        { name: "npm/yarn", level: 70, icon: "📦" },
       ],
     },
   ];
@@ -88,8 +88,6 @@ const Skills = () => {
           </h3>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              "TypeScript",
-              "Redux",
               "Next.js",
               "Socket.io",
               "Mongoose",
@@ -98,10 +96,6 @@ const Skills = () => {
               "Axios",
               "Material-UI",
               "Bootstrap",
-              "Figma",
-              "Adobe XD",
-              "Linux",
-              "Docker",
             ].map((tech, index) => (
               <span
                 key={index}
@@ -121,15 +115,7 @@ const Skills = () => {
             latest technologies
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            {[
-              "Python",
-              "Django",
-              "GraphQL",
-              "React Native",
-              "AWS",
-              "DevOps",
-              "Machine Learning",
-            ].map((tech, index) => (
+            {["Redux", "TypeScript", "AWS"].map((tech, index) => (
               <span
                 key={index}
                 className="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium hover:bg-white/30 transition-colors duration-200"

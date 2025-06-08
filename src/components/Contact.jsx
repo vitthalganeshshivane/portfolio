@@ -95,18 +95,18 @@ const Contact = () => {
     {
       icon: <Mail className="w-5 h-5" />,
       label: "Email",
-      value: "pankaj@example.com",
-      link: "mailto:pankaj@example.com",
+      value: "vitthalganeshshivane@gmail.com",
+      link: "vitthalganeshshivane@gmail.com",
     },
     {
       icon: <Phone className="w-5 h-5" />,
       label: "Phone",
-      value: "+91 12345 67890",
-      link: "tel:+911234567890",
+      value: "+91 9370394732",
+      link: "tel:+919370394732",
     },
     {
       icon: <MapPin className="w-5 h-5" />,
-      label: "Location",
+      label: "Nagpur",
       value: "India",
       link: null,
     },
@@ -116,19 +116,19 @@ const Contact = () => {
     {
       icon: <Github className="w-6 h-6" />,
       label: "GitHub",
-      url: "https://github.com/pankaj",
+      url: "https://github.com/vitthalganeshshivane",
       color: "hover:text-gray-700 dark:hover:text-gray-300",
     },
     {
       icon: <Linkedin className="w-6 h-6" />,
       label: "LinkedIn",
-      url: "https://linkedin.com/in/pankaj",
+      url: "https://linkedin.com/in/vitthalganeshshivane",
       color: "hover:text-blue-600",
     },
     {
       icon: <MessageCircle className="w-6 h-6" />,
       label: "WhatsApp",
-      url: "https://wa.me/911234567890",
+      url: "https://wa.me/919370394732",
       color: "hover:text-green-600",
     },
   ];
@@ -354,14 +354,14 @@ const Contact = () => {
           </h3>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <a
-              href="mailto:pankaj@example.com"
+              href="mailto:vitthalganeshshivane@gmail.com"
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-medium transition-colors duration-200 flex items-center space-x-2"
             >
               <Mail size={18} />
               <span>Send Email</span>
             </a>
             <a
-              href="https://wa.me/911234567890"
+              href="https://wa.me/919370394732"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-medium transition-colors duration-200 flex items-center space-x-2"

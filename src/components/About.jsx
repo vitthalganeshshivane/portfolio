@@ -69,9 +69,9 @@ const About = () => {
               </p>
               <p>
                 When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or brainstorming ideas for
-                my next project. I believe in continuous learning and am always
-                excited to take on new challenges.
+                or brainstorming ideas for my next project. I believe in
+                continuous learning and am always excited to take on new
+                challenges.
               </p>
             </div>
           </div>
@@ -112,7 +112,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-6 rounded-lg bg-blue-50 dark:bg-blue-900/20">
               <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                100+
+                500+
               </div>
               <p className="text-gray-600 dark:text-gray-300">
                 Hours of coding practice
@@ -120,7 +120,7 @@ const About = () => {
             </div>
             <div className="p-6 rounded-lg bg-green-50 dark:bg-green-900/20">
               <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">
-                10+
+                2+
               </div>
               <p className="text-gray-600 dark:text-gray-300">
                 Projects completed

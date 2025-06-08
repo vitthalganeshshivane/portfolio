@@ -81,7 +81,7 @@ const Projects = () => {
     <div
       className={`bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group ${
         project.featured ? "lg:col-span-2" : ""
-      }`}
+      }mx-auto`}
     >
       {/* Project Image Placeholder */}
       <div className="relative h-48 bg-gradient-to-br from-blue-400 to-purple-600 flex items-center justify-center">
@@ -176,7 +176,7 @@ const Projects = () => {
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">
             Featured Projects
           </h3>
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-8">
             {projects
               .filter((project) => project.featured)
               .map((project, index) => (

@@ -17,9 +17,16 @@ const Home = () => {
         <div className="text-center">
           {/* Avatar */}
           <div className="mb-8 flex justify-center">
-            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 p-1">
-              <div className="w-full h-full rounded-full bg-gray-300 dark:bg-gray-600 flex items-center justify-center text-4xl md:text-5xl font-bold text-gray-700 dark:text-gray-300">
-                P
+            <div className="w-40 h-40 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 p-1">
+              <div
+                className="w-full h-full rounded-full  flex items-center justify-center text-4xl md:text-5xl font-bold text-gray-700 dark:text-gray-300 bg-center bg-cover"
+                style={{ backgroundImage: "url('../../../Black&white.jpeg')" }}
+              >
+                {/* <img
+                  src="/Black&white.jpeg"
+                  alt="Profile"
+                  className="w-full h-full object-cover"
+                /> */}
               </div>
             </div>
           </div>
@@ -27,11 +34,11 @@ const Home = () => {
           {/* Introduction */}
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
             Hi, I'm{" "}
-            <span className="text-blue-600 dark:text-blue-400">Pankaj</span>
+            <span className="text-blue-600 dark:text-blue-400">Vitthal</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6 max-w-3xl mx-auto">
-            Aspiring Software Engineer | MERN Stack Developer | Problem Solver
+            Aspiring Software Engineer | MERN Stack Developer
           </p>
 
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
@@ -61,7 +68,7 @@ const Home = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6">
             <a
-              href="https://github.com/pankaj"
+              href="https://github.com/vitthalganeshshivane"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
@@ -70,7 +77,7 @@ const Home = () => {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com/in/pankaj"
+              href="https://linkedin.com/in/vitthalganeshshivane"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
@@ -79,7 +86,7 @@ const Home = () => {
               <Linkedin size={24} />
             </a>
             <a
-              href="mailto:pankaj@example.com"
+              href="mailto:vitthalganeshshivane@gmail.com"
               className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
               aria-label="Email"
             >

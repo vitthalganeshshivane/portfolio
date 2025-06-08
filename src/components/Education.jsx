@@ -4,9 +4,9 @@ const Education = () => {
   const education = [
     {
       degree: "BTech in Computer Science and Engineering",
-      institution: "University Name",
-      location: "City, State",
-      period: "2023 - 2027",
+      institution: "Rashtrasant Tukadoji Maharaj Nagpur University",
+      location: "Nagpur, Maharashtra",
+      period: "2023 - 2026",
       status: "Currently Pursuing",
       type: "Bachelor's Degree",
       description: [
@@ -16,23 +16,12 @@ const Education = () => {
         "Active participation in coding competitions and technical events",
         "Maintaining strong academic performance while gaining practical experience",
       ],
-      subjects: [
-        "Data Structures & Algorithms",
-        "Database Management Systems",
-        "Software Engineering",
-        "Computer Networks",
-        "Operating Systems",
-        "Web Technologies",
-        "Object-Oriented Programming",
-        "Machine Learning",
-      ],
-      gpa: "8.5/10",
       icon: "🎓",
     },
     {
       degree: "Diploma in Mechanical Engineering",
-      institution: "Polytechnic College Name",
-      location: "City, State",
+      institution: "Puranmal Lahoti Government Polytechnic, Latur",
+      location: "Latur, Maharashtra",
       period: "2020 - 2023",
       status: "Completed",
       type: "Diploma",
@@ -43,17 +32,6 @@ const Education = () => {
         "Gained experience in technical documentation and project management",
         "This background provided excellent problem-solving skills that I now apply to software development",
       ],
-      subjects: [
-        "Engineering Mathematics",
-        "Technical Drawing",
-        "Materials Science",
-        "Thermodynamics",
-        "Manufacturing Processes",
-        "Quality Control",
-        "Project Management",
-        "Workshop Technology",
-      ],
-      gpa: "8.2/10",
       icon: "⚙️",
     },
   ];
@@ -144,10 +122,6 @@ const Education = () => {
                       <MapPin size={16} />
                       <span>{edu.location}</span>
                     </div>
-                    <div className="flex items-center space-x-1">
-                      <Award size={16} />
-                      <span>GPA: {edu.gpa}</span>
-                    </div>
                   </div>
                 </div>
 
@@ -175,62 +149,10 @@ const Education = () => {
                     ))}
                   </ul>
                 </div>
-
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
-                    Key Subjects:
-                  </h4>
-                  <div className="grid grid-cols-2 gap-2">
-                    {edu.subjects.map((subject, i) => (
-                      <span
-                        key={i}
-                        className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded text-sm font-medium text-center"
-                      >
-                        {subject}
-                      </span>
-                    ))}
-                  </div>
-                </div>
               </div>
             </div>
           ))}
         </div>
-
-        {/* Certifications */}
-        <div>
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">
-            Certifications & Additional Learning
-          </h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            {certifications.map((cert, index) => (
-              <div
-                key={index}
-                className="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-lg p-6 border border-blue-200 dark:border-blue-800"
-              >
-                <div className="flex items-start space-x-3">
-                  <div className="flex-shrink-0 w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
-                    <Award className="w-5 h-5 text-white" />
-                  </div>
-                  <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
-                      {cert.name}
-                    </h4>
-                    <p className="text-blue-600 dark:text-blue-400 font-medium mb-1">
-                      {cert.provider}
-                    </p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                      Completed: {cert.date}
-                    </p>
-                    <p className="text-xs text-gray-500 dark:text-gray-500">
-                      {cert.credential}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* Future Learning Goals */}
         <div className="mt-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl p-8 text-center text-white">
           <h3 className="text-2xl font-bold mb-4">
