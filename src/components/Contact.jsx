@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import {
   Mail,
   Phone,
@@ -18,6 +20,7 @@ const Contact = () => {
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState("");
+  const formRef = useRef();
 
   const validateForm = () => {
     const newErrors = {};
@@ -50,23 +53,27 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!validateForm()) {
-      return;
-    }
+    if (!validateForm()) return;
 
     setIsSubmitting(true);
     setSubmitMessage("");
 
     try {
-      // Simulate form submission
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+      const result = await emailjs.sendForm(
+        "service_78gvo2h", // ✅ Your Service ID
+        "template_ot18i97", // ✅ Your Template ID
+        formRef.current,
+        "obgt9NrppG90JWPMb", // ✅ Your Public Key
+      );
 
+      console.log("Email sent:", result.text);
       setSubmitMessage(
         "Thank you for your message! I'll get back to you soon.",
       );
       setFormData({ name: "", email: "", message: "" });
       setErrors({});
     } catch (error) {
+      console.error("Email sending failed:", error.text);
       setSubmitMessage(
         "There was an error sending your message. Please try again.",
       );
@@ -225,7 +232,7 @@ const Contact = () => {
               Send a Message
             </h3>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} ref={formRef} className="space-y-6">
               {/* Name Field */}
               <div>
                 <label
@@ -309,6 +316,12 @@ const Contact = () => {
                   </p>
                 )}
               </div>
+              <input type="hidden" name="title" value="Portfolio Contact" />
+              <input
+                type="hidden"
+                name="time"
+                value={new Date().toLocaleString()}
+              />
 
               {/* Submit Button */}
               <button

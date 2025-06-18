@@ -5,8 +5,8 @@ const Experience = () => {
     {
       title: "MERN Stack Developer Intern",
       company: "Amika Softwares",
-      location: "Remote",
-      period: "2024 - Present",
+      location: "On-site",
+      period: "May-2024 to Present",
       status: "Currently Doing",
       type: "Internship",
       description: [
@@ -22,6 +22,7 @@ const Experience = () => {
         "Express.js",
         "MongoDB",
         "JavaScript",
+        "Redux-toolkit",
         "HTML5",
         "CSS3",
       ],
