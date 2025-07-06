@@ -3,67 +3,94 @@ import { ExternalLink, Github, Folder } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce MERN App",
+      title: "Vroom45 – Ride Booking App",
       description:
-        "A full-stack e-commerce platform with user authentication, product management, shopping cart, and payment integration. Built with modern MERN stack technologies.",
-      technologies: ["React", "Node.js", "Express", "MongoDB", "JWT", "Stripe"],
-      githubUrl: "https://github.com/pankaj/ecommerce-app",
-      liveUrl: "https://ecommerce-app-demo.vercel.app",
-      imageUrl: "/api/placeholder/400/250",
-      status: "Completed",
-      featured: true,
-    },
-    {
-      title: "Task Management Dashboard",
-      description:
-        "A responsive task management application with drag-and-drop functionality, real-time updates, and team collaboration features.",
-      technologies: ["React", "Redux", "Node.js", "Socket.io", "MongoDB"],
-      githubUrl: "https://github.com/pankaj/task-manager",
-      liveUrl: "https://task-manager-demo.netlify.app",
-      imageUrl: "/api/placeholder/400/250",
-      status: "Completed",
-      featured: true,
-    },
-    {
-      title: "Weather App PWA",
-      description:
-        "A Progressive Web App that provides real-time weather information with beautiful UI, offline support, and location-based forecasts.",
-      technologies: ["React", "PWA", "Weather API", "Tailwind CSS"],
-      githubUrl: "https://github.com/pankaj/weather-pwa",
-      liveUrl: "https://weather-pwa-demo.vercel.app",
-      imageUrl: "/api/placeholder/400/250",
-      status: "Completed",
-      featured: false,
-    },
-    {
-      title: "Portfolio Website",
-      description:
-        "This responsive portfolio website built with React, featuring dark mode, smooth animations, and modern design principles.",
-      technologies: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
-      githubUrl: "https://github.com/pankaj/portfolio",
-      liveUrl: "https://pankaj-portfolio.vercel.app",
-      imageUrl: "/api/placeholder/400/250",
-      status: "Completed",
-      featured: false,
-    },
-    {
-      title: "Social Media Clone",
-      description:
-        "A social media platform clone with user profiles, posts, comments, likes, and real-time messaging functionality.",
+        "A full-stack Uber clone named Vroom45 that enables users to book rides in real time. Built with modern MERN technologies, this app features user authentication, location tracking, fare calculation, driver-passenger interaction. The UI is mobile-optimized with ongoing enhancements for desktop support.",
       technologies: [
         "React",
         "Node.js",
-        "Express",
+        "Express.js",
         "MongoDB",
+        "JWT",
+        "Tailwind CSS",
         "Socket.io",
-        "Cloudinary",
+        "Redux Toolkit",
       ],
-      githubUrl: "https://github.com/pankaj/social-app",
-      liveUrl: null,
-      imageUrl: "/api/placeholder/400/250",
-      status: "In Progress",
+      githubUrl: {
+        frontend: "https://github.com/vitthalganeshshivane/Ubar_Clone-frontend",
+        backend: "https://github.com/vitthalganeshshivane/Ubar_Clone-backend",
+      },
+      liveUrl: "https://vitthalganeshshivane.vercel.app/",
+      imageUrl:
+        "https://media.licdn.com/dms/image/v2/D5612AQGEj1_pOIxVIA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1706172015188?e=2147483647&v=beta&t=tByxAL12GywZbzKlapnj_g6uE0KFEV04HNxkHPPT_1A",
+      status: "Completed",
       featured: true,
     },
+    {
+      title: "Digital Classroom Platform",
+      description:
+        "A modern web-based classroom management system designed for teachers and students. It includes features such as user authentication, assignment uploads by teacher, live class links, notice board, and subject-wise study material. Built with a scalable MERN stack architecture and responsive UI.",
+      technologies: [
+        "React",
+        "Express.js",
+        "Node.js",
+        "Socket.io",
+        "MongoDB",
+        "Tailwind CSS",
+        "Cloudinary",
+      ],
+      githubUrl: {
+        frontend:
+          "https://github.com/vitthalganeshshivane/digital-classroom-frontend",
+        backend:
+          "https://github.com/vitthalganeshshivane/digital-classroom-backend",
+      },
+      liveUrl: "https://digital-classroom-gamma.vercel.app/",
+      imageUrl:
+        "https://www.bthaber.com/wp-content/uploads/2020/06/GessTurkiye_UzaktanE%C4%9Fitim_Gorsel02-1024x1024.jpg",
+      status: "Completed",
+      featured: true,
+    },
+    // {
+    //   title: "Weather App PWA",
+    //   description:
+    //     "A Progressive Web App that provides real-time weather information with beautiful UI, offline support, and location-based forecasts.",
+    //   technologies: ["React", "PWA", "Weather API", "Tailwind CSS"],
+    //   githubUrl: "https://github.com/pankaj/weather-pwa",
+    //   liveUrl: "https://weather-pwa-demo.vercel.app",
+    //   imageUrl: "/api/placeholder/400/250",
+    //   status: "Completed",
+    //   featured: false,
+    // },
+    // {
+    //   title: "Portfolio Website",
+    //   description:
+    //     "This responsive portfolio website built with React, featuring dark mode, smooth animations, and modern design principles.",
+    //   technologies: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
+    //   githubUrl: "https://github.com/pankaj/portfolio",
+    //   liveUrl: "https://pankaj-portfolio.vercel.app",
+    //   imageUrl: "/api/placeholder/400/250",
+    //   status: "Completed",
+    //   featured: false,
+    // },
+    // {
+    //   title: "Social Media Clone",
+    //   description:
+    //     "A social media platform clone with user profiles, posts, comments, likes, and real-time messaging functionality.",
+    //   technologies: [
+    //     "React",
+    //     "Node.js",
+    //     "Express",
+    //     "MongoDB",
+    //     "Socket.io",
+    //     "Cloudinary",
+    //   ],
+    //   githubUrl: "https://github.com/pankaj/social-app",
+    //   liveUrl: null,
+    //   imageUrl: "/api/placeholder/400/250",
+    //   status: "In Progress",
+    //   featured: true,
+    // },
   ];
 
   const getStatusColor = (status) => {
@@ -85,7 +112,12 @@ const Projects = () => {
     >
       {/* Project Image Placeholder */}
       <div className="relative h-48 bg-gradient-to-br from-blue-400 to-purple-600 flex items-center justify-center">
-        <Folder className="w-16 h-16 text-white opacity-80" />
+        {/* <Folder className="w-16 h-16 text-white opacity-80" /> */}
+        <img
+          src={project.imageUrl}
+          alt={project.title}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+        />
         <div className="absolute top-4 right-4">
           <span
             className={`px-2 py-1 rounded-full text-xs font-medium ${getStatusColor(project.status)}`}
@@ -131,14 +163,24 @@ const Projects = () => {
         {/* Links */}
         <div className="flex space-x-3">
           <a
-            href={project.githubUrl}
+            href={project.githubUrl?.frontend}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-1 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             aria-label="View source code"
           >
             <Github size={16} />
-            <span className="text-sm">Code</span>
+            <span className="text-sm">Frontend</span>
+          </a>
+          <a
+            href={project.githubUrl?.backend}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-1 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            aria-label="View source code"
+          >
+            <Github size={16} />
+            <span className="text-sm">Backend</span>
           </a>
 
           {project.liveUrl && (
@@ -186,7 +228,7 @@ const Projects = () => {
         </div>
 
         {/* Other Projects */}
-        <div>
+        {/* <div>
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">
             Other Projects
           </h3>
@@ -197,7 +239,7 @@ const Projects = () => {
                 <ProjectCard key={index} project={project} />
               ))}
           </div>
-        </div>
+        </div> */}
 
         {/* More Projects CTA */}
         <div className="mt-16 text-center bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl p-8 text-white">
