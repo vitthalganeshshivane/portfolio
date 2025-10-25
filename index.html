@@ -13,6 +13,22 @@
       content="Vitthal Ganesh Shivane's portfolio - MERN Stack Developer, Problem Solver, and passionate software engineer."
     />
     <title>Vitthal Ganesh Shivane</title>
+
+    <!-- ✅ Load the Google Analytics script FIRST -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-F2C8852KCR"
+    ></script>
+
+    <!-- ✅ Then initialize GA -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-F2C8852KCR");
+    </script>
   </head>
   <body>
     <div id="root"></div>
