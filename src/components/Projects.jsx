@@ -3,6 +3,76 @@ import { ExternalLink, Github, Folder } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
+      title: "DocSpace – Collaborative Document Editor",
+      description:
+        "DocSpace is a Google Docs–inspired collaborative document editor built from scratch. It supports rich-text editing with headings, font styles, tables, task lists, comments, rulers, and formatting tools. The editor is powered by TipTap and designed with a clean, productivity-focused UI. The project focuses heavily on editor internals, extensibility, and real-world document workflows.",
+      technologies: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "TipTap",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Radix UI",
+        "Zustand",
+      ],
+      sourceCode:
+        "https://github.com/vitthalganeshshivane/DocSpace-Collaborative-Document-Editor",
+      liveUrl: "https://docspace-editor.vercel.app/",
+      imageUrl:
+        "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?q=80&w=2000&auto=format&fit=crop",
+      status: "Completed",
+      featured: true,
+    },
+    {
+      title: "Writeflow – Where Ideas Flow",
+      description:
+        "Writeflow is a modern, distraction-free writing and blogging platform focused on clean workflows and content creation. It enables users to write, edit, and manage posts with a smooth editor experience and a minimal, productivity-oriented UI. The project emphasizes structured writing, scalability, and real-world content publishing flows.",
+      technologies: [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Tailwind CSS",
+        "JWT",
+      ],
+      githubUrl: {
+        frontend: "https://github.com/vitthalganeshshivane/Writeflow-Client",
+        backend: "https://github.com/vitthalganeshshivane/Writeflow-Server",
+      },
+      liveUrl: "http://writeflow-blogs.vercel.app/",
+      imageUrl:
+        "https://img.freepik.com/free-photo/online-message-blog-chat-communication-envelop-graphic-icon-concept_53876-139717.jpg",
+      status: "Completed",
+      featured: true,
+    },
+    {
+      title: "MindGuard – Mental Health Detection & Assessment System",
+      description:
+        "MindGuard is an AI-powered mental health detection system designed to identify early signs of stress, anxiety, and depression. The project combines machine learning–based risk prediction with LLM-powered empathetic assessments and personalized suggestions. Built as a full-stack system, it focuses on real-world mental health workflows, safety considerations, and explainable AI-assisted decision support rather than diagnosis.",
+      technologies: [
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Machine Learning",
+        "Google Gemini API",
+      ],
+      githubUrl: {
+        frontend:
+          "https://github.com/vitthalganeshshivane/mental-health-frontend",
+        backend:
+          "https://github.com/vitthalganeshshivane/mental-health-backend",
+      },
+      liveUrl: "https://mental-health-detection.vercel.app/",
+      imageUrl:
+        "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?q=80&w=2000&auto=format&fit=crop",
+      status: "Completed",
+      featured: true,
+    },
+    {
       title: "Vroom45 – Ride Booking App",
       description:
         "A full-stack Uber clone named Vroom45 that enables users to book rides in real time. Built with modern MERN technologies, this app features user authentication, location tracking, fare calculation, driver-passenger interaction. The UI is mobile-optimized with ongoing enhancements for desktop support.",
@@ -20,7 +90,7 @@ const Projects = () => {
         frontend: "https://github.com/vitthalganeshshivane/Ubar_Clone-frontend",
         backend: "https://github.com/vitthalganeshshivane/Ubar_Clone-backend",
       },
-      liveUrl: "https://vitthalganeshshivane.vercel.app/",
+      liveUrl: "https://vroom45.vercel.app/",
       imageUrl:
         "https://media.licdn.com/dms/image/v2/D5612AQGEj1_pOIxVIA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1706172015188?e=2147483647&v=beta&t=tByxAL12GywZbzKlapnj_g6uE0KFEV04HNxkHPPT_1A",
       status: "Completed",
@@ -51,46 +121,6 @@ const Projects = () => {
       status: "Completed",
       featured: true,
     },
-    // {
-    //   title: "Weather App PWA",
-    //   description:
-    //     "A Progressive Web App that provides real-time weather information with beautiful UI, offline support, and location-based forecasts.",
-    //   technologies: ["React", "PWA", "Weather API", "Tailwind CSS"],
-    //   githubUrl: "https://github.com/pankaj/weather-pwa",
-    //   liveUrl: "https://weather-pwa-demo.vercel.app",
-    //   imageUrl: "/api/placeholder/400/250",
-    //   status: "Completed",
-    //   featured: false,
-    // },
-    // {
-    //   title: "Portfolio Website",
-    //   description:
-    //     "This responsive portfolio website built with React, featuring dark mode, smooth animations, and modern design principles.",
-    //   technologies: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
-    //   githubUrl: "https://github.com/pankaj/portfolio",
-    //   liveUrl: "https://pankaj-portfolio.vercel.app",
-    //   imageUrl: "/api/placeholder/400/250",
-    //   status: "Completed",
-    //   featured: false,
-    // },
-    // {
-    //   title: "Social Media Clone",
-    //   description:
-    //     "A social media platform clone with user profiles, posts, comments, likes, and real-time messaging functionality.",
-    //   technologies: [
-    //     "React",
-    //     "Node.js",
-    //     "Express",
-    //     "MongoDB",
-    //     "Socket.io",
-    //     "Cloudinary",
-    //   ],
-    //   githubUrl: "https://github.com/pankaj/social-app",
-    //   liveUrl: null,
-    //   imageUrl: "/api/placeholder/400/250",
-    //   status: "In Progress",
-    //   featured: true,
-    // },
   ];
 
   const getStatusColor = (status) => {
@@ -161,27 +191,33 @@ const Projects = () => {
         </div>
 
         {/* Links */}
+
         <div className="flex space-x-3">
-          <a
-            href={project.githubUrl?.frontend}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center space-x-1 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-            aria-label="View source code"
-          >
-            <Github size={16} />
-            <span className="text-sm">Frontend</span>
-          </a>
-          <a
-            href={project.githubUrl?.backend}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center space-x-1 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-            aria-label="View source code"
-          >
-            <Github size={16} />
-            <span className="text-sm">Backend</span>
-          </a>
+          {project.githubUrl && (
+            <>
+              <a
+                href={project.githubUrl?.frontend}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-1 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                aria-label="View source code"
+              >
+                <Github size={16} />
+                <span className="text-sm">Frontend</span>
+              </a>
+
+              <a
+                href={project.githubUrl?.backend}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-1 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                aria-label="View source code"
+              >
+                <Github size={16} />
+                <span className="text-sm">Backend</span>
+              </a>
+            </>
+          )}
 
           {project.liveUrl && (
             <a
@@ -193,6 +229,19 @@ const Projects = () => {
             >
               <ExternalLink size={16} />
               <span className="text-sm">Live Demo</span>
+            </a>
+          )}
+
+          {project.sourceCode && (
+            <a
+              href={project.sourceCode}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-1 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              aria-label="Source Code"
+            >
+              <Github size={16} />
+              <span className="text-sm">Source Code</span>
             </a>
           )}
         </div>
