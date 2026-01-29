@@ -299,7 +299,7 @@ const Projects = () => {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <a
-              href="https://github.com/pankaj"
+              href="https://github.com/vitthalganeshshivane"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-200"
